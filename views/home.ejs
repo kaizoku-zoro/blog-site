@@ -1,0 +1,10 @@
+<%- include('partials/header'); -%>
+
+    <h1>Home</h1>
+    <p> <%= content1 %> </p>
+  <%  for(x in posts){          %>
+        <h1><%= posts[x].title %> </h1>
+        <p> <%= posts[x].preview %> <span><a href="posts/<%= posts[x].title %>"> Read more</a></span> </p>
+  <%  }                             %>
+
+<%- include('partials/footer'); -%>
